@@ -4,6 +4,9 @@ function plotData(x, y)
 %   population and profit.
 
 figure; % open a new figure window
+plot(x, y, 'rx', 'MarkerSize', 10);
+xlabel('Population');
+ylabel('Revenue');
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Plot the training data into a figure using the 
