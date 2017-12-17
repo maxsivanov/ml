@@ -14,6 +14,9 @@ p = zeros(m, 1);
 %               your learned logistic regression parameters. 
 %               You should set p to a vector of 0's and 1's
 %
+for iter = 1:size(X, 1)
+    p(iter) = sigmoid(X(iter, :)*theta) >= 0.5;
+end
 
 
 
